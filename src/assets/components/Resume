@@ -1,0 +1,45 @@
+import React from 'react';
+
+const Resume = () => {
+    return (
+        <section className="resume">
+            <h1>My Resume</h1>
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>University of Richmond Web Development Bootcamp</strong> - Certificate (2025)
+                    </li>
+                    <li>
+                        <strong>Regent University Law School</strong> - Juris Docterate (2000)
+                    </li>
+                    <li>
+                        <strong>Virginia Commonwealth University</strong> - B.S. (1989)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Coding Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Front-end</strong> 
+                        <li> HTML</li>
+                        <li> CSS</li>   
+                        <li> JavaScript</li>
+                        <li> React</li> 
+                    </li>
+                   
+                    <li>
+                        <strong>Back-end</strong> 
+                        <li> Node.js</li>
+                        <li> Express.js</li>
+                        <li> MongoDB</li>
+                        <li> MySQL</li>
+                    
+                </ul>
+           
+            </section>
+    );
+};
+
+export default Resume;
