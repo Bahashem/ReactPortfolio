@@ -46,7 +46,7 @@ const Resume = () => {
                         
                     </li>
                     <li>
-                        <strong>Other</strong> 
+                        <strong>Other</strong> </li>
                         <li> Git</li>
                         <li> GitHub</li>
                         <li> VS Code</li>
@@ -54,7 +54,9 @@ const Resume = () => {
                     </ul>
            
             </section>
+            </section>
     );
-};
+    }
+
 
 export default Resume;
