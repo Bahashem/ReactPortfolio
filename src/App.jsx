@@ -43,8 +43,11 @@ export default function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <div>
         <Header onNavigate={handleNavigation} />
         <main>{renderSection()}</main>
         <Footer></Footer> 
-    )
-}
+      </div>
+      </>
+        );
+  } 

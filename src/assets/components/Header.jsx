@@ -1,54 +1,81 @@
-import React, {useState} from 'react';
-import {Link, useLocation} from 'react-router-dom';
-import AboutMe from './AboutMe';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Resume from './Resume';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import AboutMe from "./AboutMe";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
+import Resume from "./Resume";
 
 const Header = () => {
-    const location = useLocation();
-    const [currentSection, setCurrentSection] = useState(location.pathname);
+  const location = useLocation();
+  const [currentSection, setCurrentSection] = useState(location.pathname);
+  const renderPage = () => {
+    if (currentPage === "Header") {
+      return <Header />;
+    }
+    if (currentPage === "About Me") {
+      return <aboutMe />;
+    }
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
 
-    return (
-        <header>
-            <h1>Diana Gaston (Bahashem)</h1>
-            <nav>
-                
-          <ul>
-          <li><Link to="#aboutMe"
-              className={currentSection === '/' ? 'active' : ''} 
-              onClick={() => setCurrentSection('/aboutMe')}
-              >
+    if (currentPage === "Resume") {
+      return <resume />;
+    }
+    if (currentPage === "Portfolio") {
+      return <Portfolio />;
+    }
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
+  return (
+    <header>
+      <h1>Diana Gaston (Bahashem)</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link
+              to="#aboutMe"
+              className={currentSection === "/" ? "active" : ""}
+              onClick={() => setCurrentSection("/aboutMe")}
+            >
               About Me
             </Link>
-            </li>
-            
-            <li><Link to="#portfolio"      
-              className={currentSection === '/portfolio' ? 'active' : ''} 
-              onClick={() => setCurrentSection('/portfolio')}
-              >
-                    Portfolio
+          </li>
+
+          <li>
+            <Link
+              to="#portfolio"
+              className={currentSection === "/portfolio" ? "active" : ""}
+              onClick={() => setCurrentSection("/portfolio")}
+            >
+              Portfolio
             </Link>
           </li>
-         
-          <li><Link to="#contact"  
-              className={currentSection === '/contact' ? 'active' : ''} 
-              onClick={() => setCurrentSection('/contact')}
-              >
-                  Contact
+
+          <li>
+            <Link
+              to="#contact"
+              className={currentSection === "/contact" ? "active" : ""}
+              onClick={() => setCurrentSection("/contact")}
+            >
+              Contact
             </Link>
           </li>
-          <li><Link to="#resume"
-              className={currentSection === '/resume' ? 'active' : ''} 
-              onClick={() => setCurrentSection('/resume')}
+          <li>
+            <Link
+              to="#resume"
+              className={currentSection === "/resume" ? "active" : ""}
+              onClick={() => setCurrentSection("/resume")}
             >
               Resume
             </Link>
           </li>
-          </ul>
-          </nav>
+        </ul>
+      </nav>
     </header>
-)};
-
+  );
+};
 
 export default Header;
