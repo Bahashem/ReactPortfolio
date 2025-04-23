@@ -1,14 +1,27 @@
-export function About(){
+export function AboutMe(){
     return(
-        <section className="text-center max-w-3xl mx-auto p-4 bg-white shadow-md rounded-lg mt-8">
-            <img src="./assets/images/Diana.jpg" alt="Profile" />
-            className="w-40 h-40 rounded-full mx-auto shadow-lg border-4 border-pink-300 mb-4" 
+        <section className={AboutMe}> 
+            <div class ="container">
+                <div class="row">
+                    <div class="aboutMe-col-1">
+                    <img src="./assets/images/aboutme1.jpg" alt="Profile"/>
+                    </div>
+                        <div class="aboutMe-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <h2 >Hello there!</h2>
+            <p >I'm Diana Gaston, a passionate web developer with a love for creating beautiful and functional websites.</p>  
+            <p >I am a Bootcamp student who has worked with various technologies.</p>
+            <p >When I'm not coding, you can find me exploring new places, spending time with family or making handmade soaps.</p>
+            <p >Let's connect and create something amazing together!</p>
+                        </div>
+                    </div>
+            
+                </div>
+            
         
-            <h2 className="text-2xl font-bold text-green-700 mb-2">Hello there!</h2>
-            <p className="text-lg text-gray-700 mb-4">I'm Diana Gaston, a passionate web developer with a love for creating beautiful and functional websites.</p>  
-            <p className="text-lg text-gray-700 mb-4">I am a Bootcamp student who has worked with with various technologies.</p>
-            <p className="text-lg text-gray-700 mb-4">When I'm not coding, you can find me exploring new places or making handmade soaps.</p>
-            <p className="text-lg text-gray-700 mb-4">Let's connect and create something amazing together!</p>
+            
         </section>  
     );
 }
+export default AboutMe;
+

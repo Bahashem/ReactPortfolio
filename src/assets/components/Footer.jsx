@@ -1,10 +1,4 @@
-export function Footer({
-  current,
-  setCurrent,
-}: {
-  current: string,
-  setCurrent: (value: string) => void,
-}) {
+export function Footer({ current, setCurrent }) {
   return (
     <footer className={"footer"}>
       <div className="footer-content">
@@ -31,3 +25,4 @@ export function Footer({
     </footer>
   );
 }
+export default Footer;

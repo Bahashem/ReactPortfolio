@@ -7,20 +7,48 @@
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: .2em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #64ff92aa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #fb61bbaa);
+}
+/*------------------ABOUTME_SECTION------------------*/
+#aboutMe{
+  padding: 80px 0;
+  color: #fadad6
+ 
 }
 
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.sub-title{
+  color: #fff
+}
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(deg);
   }
   to {
     transform: rotate(360deg);

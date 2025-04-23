@@ -21,15 +21,15 @@ const Resume = () => {
             <section>
                 <h2>Coding Experience</h2>
                 <ul>
-                    <li>
+                    <ol>
                         <strong>Front-end</strong> 
                         <li> HTML</li>
                         <li> CSS</li>   
                         <li> JavaScript</li>
                         <li> React</li> 
-                    </li>
+                    </ol>
                    
-                    <li>
+                    <ol>
                         <strong>Back-end</strong> 
                         <li> Node.js</li>
                         <li> Express.js</li>
@@ -44,13 +44,14 @@ const Resume = () => {
                         <li> JSON</li>
                         <li> dotenv</li>
                         
-                    </li>
-                    <li>
-                        <strong>Other</strong> </li>
+                    </ol>
+                    <ol>
+                        <li><strong>Other</strong> </li>
                         <li> Git</li>
                         <li> GitHub</li>
                         <li> VS Code</li>
                         <li> Bootstrap</li>
+                    </ol>
                     </ul>
            
             </section>

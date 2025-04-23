@@ -1,39 +1,41 @@
+// Removed unused import
+"../..public/images/project1.jpg";
+
 export function Portfolio() {
   const projects = [
     {
       title: "Project 1- README Generator",
-      image: "./assets/images/project1.jpg",
+      image: "../images/project1.jpg",
       Deploy: "https://app.screencastify.com/v3/watch/zkXpFDBTukB75sSn9kid",
       Repo: "https://github.com/Bahashem/ReadMeGenerator",
     },
     {
       title: "Project 2 - Weather Dashboard",
-      image: "./assets/images/project2.png",
+      image: "../images/project2.png",
       Deploy: "https://.google.com/file/d/1btUlp7IonUhFgjnTHDUXdYIvsJVhCIjp",
       Repo: "https://github.com/Bahashem/WeatherDashboard",
     },
     {
       title: "Project 3- bento-the-lunch-box",
-      image: "./assets/images/project3.png",
+      image: "../images/project3.png",
       Deploy: "https://deetsb.github.io/bento-the-lunch-box/",
       Repo: "https://github.com/deetsb/bento-the-lunch-box",
     },
     {
       title: "Project 4-ReelReveal",
-      image: "./assets/images/project4.png",
+      image: "../images/project4.png",
       Deploy: "https://reelreveal.onrender.com",
       Repo: "https://github.com/hazyplebian/ReelReveal",
     },
     {
       title: "Project 5- VehicleBuilder",
-      image: "./assets/images/project5.jpg",
-      Deploy:
-        "https://drive.google.com/file/d/1ABpBiUZgB9F-m8-NX1PCS243W0cEBAZe/view",
+      image: "../images/project5.jpg",
+      Deploy:"https://drive.google.com/file/d/1ABpBiUZgB9F-m8-NX1PCS243W0cEBAZe/view",
       Repo: "https://github.com/Bahashem/VehicleBuilder",
     },
   ];
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-">
       {projects.map((project, index) => (
         <div
           key={index}
@@ -71,5 +73,4 @@ export function Portfolio() {
   );
 }
 
-{
-}
+export default Portfolio;
