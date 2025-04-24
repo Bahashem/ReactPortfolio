@@ -42,7 +42,7 @@ const Header = () => {
             <Link
               to="/"
              // className={currentSection === "/" ? "active" : ""}
-             // onClick={() => setCurrentSection("/aboutMe")}
+             // onClick={() => setCurrentSection("/AboutMe")}
             >
               About Me
             </Link>
@@ -50,9 +50,9 @@ const Header = () => {
 
           <li>
             <Link
-              to="/portfolio"
-             // className={currentSection === "/portfolio" ? "active" : ""}
-             // onClick={() => setCurrentSection("/portfolio")}
+              to="/Portfolio"
+             // className={currentSection === "/Portfolio" ? "active" : ""}
+             // onClick={() => setCurrentSection("/Portfolio")}
             >
               Portfolio
             </Link>
@@ -60,18 +60,18 @@ const Header = () => {
 
           <li>
             <Link
-              to="/contact"
-             // className={currentSection === "/contact" ? "active" : ""}
-             //onClick={() => setCurrentSection("/contact")}
+              to="/Contact"
+             // className={currentSection === "/Contact" ? "active" : ""}
+             //onClick={() => setCurrentSection("/Contact")}
             >
               Contact
             </Link>
           </li>
           <li>
             <Link
-              to="/resume"
-             // className={currentSection === "/resume" ? "active" : ""}
-             // onClick={() => setCurrentSection("/resume")}
+              to="/Resume"
+             // className={currentSection === "/Resume" ? "active" : ""}
+             // onClick={() => setCurrentSection("/Resume")}
             >
               Resume
             </Link>

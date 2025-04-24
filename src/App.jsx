@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 //import AboutMe  from './assets/components/AboutMe';
@@ -11,9 +9,9 @@ import  Header from "./assets/components/Header.jsx";
 import { Outlet } from 'react-router-dom';
 
 export default function App() {
-  //const [currentSection, setCurrentSection] = useState("About");
+  //const [currentSection, setCurrentSection] = useState("AboutMe");
 
-  /*
+  
   const renderSection = () => {
       switch (currentSection) {
           case "Portfolio":
@@ -30,28 +28,24 @@ export default function App() {
   const handleNavigation = (section) => {
       setCurrentSection(section);
   };
-  */    
+     
 
   return (
     <>
-      <div className="min-h-screen bg-white text-gray-800">
-        { /* <Header 
-          onNavigate={handleNavigation}
-        /> */}
-        <Header />
+      <div className="min-h-screen bg-white text-green-800">
+          <header 
+          onNavigate={handleNavigation}>
+        </header>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
         <Outlet />
       </div>
-      { /*<div>
+      { <div>
         <Header onNavigate={handleNavigation} />
         <main>{renderSection()}</main>
         <Footer></Footer> 
-      </div> */ }
+      </div> }
 
         <Footer />
       </>

@@ -1,9 +1,8 @@
-import ReactDOM from 'react-dom/client';
 import React from 'react';  
+import ReactDOM from 'react-dom/client';
 import './index.css';
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { Router, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import App from './App.jsx';
 import AboutMe from './assets/components/AboutMe.jsx';
 import Contact from './assets/components/Contact.jsx';
@@ -18,24 +17,24 @@ const router = createBrowserRouter([
       children: [
         {
           index: true,
-          element: <AboutMe />
+          element: <AboutMe />,
         },
         { 
-          path: '/contact',
-          element: <Contact />
+          path: '/Contact',
+          element: <Contact />,
         },
         { 
-          path: '/portfolio',
-          element: <Portfolio />
+          path: '/Portfolio',
+          element: <Portfolio />,
         },
         { 
-          path: '/resume',
-          element: <Resume />
+          path: '/Resume',
+          element: <Resume />,
         }
       ] 
     }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+<RouterProvider router={router}/>
 );

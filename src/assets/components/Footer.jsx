@@ -1,7 +1,7 @@
 export function Footer({ current, setCurrent }) {
   return (
-    <footer className={"footer"}>
-      <div className="footer-content">
+    <Footer className={"Footer"}>
+      <div className="Footer-content">
         <p>© 2025 Bahashem. All rights reserved.</p>
         <ul className="social-links">
           <li>
@@ -19,10 +19,10 @@ export function Footer({ current, setCurrent }) {
         </ul>
       </div>
 
-      <div className="footer-bottom">
-        <p>Made with ❤️ by Bahashem</p>
+      <div className="Footer-bottom">
+        <p>Copyright 2025. Made with ❤️ by Bahashem</p>
       </div>
-    </footer>
+    </Footer>
   );
 }
 export default Footer;

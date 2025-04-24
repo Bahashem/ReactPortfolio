@@ -2,7 +2,7 @@ ReactPortfolio README
 License:MIT
 
 Description
-This is a REACT portfolio of my work samples used to highlight my skills for potential employers.
+This is a REACT Portfolio of my work samples used to highlight my skills for potential employers.
 
 Table of Content
 1.Installation Instructions 2.Usage Information 3.Contribution 4.Tests 5.Questions
@@ -23,7 +23,7 @@ Tests
 No test created at this time.
 
 Questions
-If you have any questions, feel free to contact me at:
+If you have any questions, feel free to Contact me at:
 
 -GitHub Bahashem
 
