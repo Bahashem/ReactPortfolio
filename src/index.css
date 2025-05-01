@@ -19,10 +19,11 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 20px;
   min-height: 100vh;
 }
-#header {
+.headerpic {
+  color: #fff;
   width: 100%;
   height: 77vh;
   background-image: url(images/header1.jpg);
@@ -31,56 +32,51 @@ body {
 }
 
 #header-content {
- max-width: 600px;
+  max-width: 600px;
 }
 
-
-.container{
+.container {
   padding: 10px 10%;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.logo{
+.logo {
   width: 60px;
-
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
-  
 }
-nav ul li a{
-   color: #fff;
-   text-decoration: none;
-   font-size: 16 px;
-   position: relative;
-   
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16 px;
+  position: relative;
 }
 
-nav ul li a::after{
-  content: '';
+nav ul li a::after {
+  content: "";
   width: 0;
   height: 2px;
   background: #f4beb5;
   position: absolute;
   left: 0;
   bottom: -5px;
-
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
   width: 100%;
   transition: all 0.3s ease;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: #f4beb5;
 }
 
@@ -93,20 +89,21 @@ a:hover {
   color: #a1cf6b;
 }
 
-.header-text{
+.header-text {
   margin-top: 20%;
   font-size: 30px;
-  color: white
+  color: white;
+  text-shadow: 1px 3px 0px black;
 }
 
-.header-text h1{
+.header-text h1 {
   font-size: 60px;
   margin-top: 20px;
-  color: pink;
-
+  color: rgb(255, 192, 239);
+  text-shadow: 1px 2px 0px white;
 }
 
-.header-text h1 span{
+.header-text h1 span {
   font-weight: bold;
   color: #548836;
 }
@@ -116,7 +113,7 @@ h1 {
   line-height: 1.1;
 }
 
-.home-icons{
+.home-icons {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -131,9 +128,13 @@ h1 {
 }
 .home-icons a:hover {
   background: pink;
-  color: green; 
+  color: green;
   box-shadow: 0 0 20px pink;
 }
 
-
-
+.Footer {
+  background: green;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}

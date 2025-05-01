@@ -30,40 +30,23 @@ export function Portfolio() {
     {
       title: "Project 5- VehicleBuilder",
       image: "../images/vehicleB.jpg",
-      Deploy:"https://drive.google.com/file/d/1ABpBiUZgB9F-m8-NX1PCS243W0cEBAZe/view",
+      Deploy:
+        "https://drive.google.com/file/d/1ABpBiUZgB9F-m8-NX1PCS243W0cEBAZe/view",
       Repo: "https://github.com/Bahashem/VehicleBuilder",
     },
   ];
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-">
+    <section className="portfolioGrid">
       {projects.map((project, index) => (
-        <div
-          key={index}
-          className="bg-white rounded-2xl shadow-md overflow-hidden"
-        >
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-48 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-xl font-bold text-green-700">
-              {project.title}
-            </h3>
-            <a
-              href={project.Deploy}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-500 font-medium hover:underline"
-            >
+        <div key={index} className="projectBox">
+          <img src={project.image} alt={project.title} className="projectPic" />
+          <div className="projectDetails">
+            <h3 className="projectTitle">{project.title}</h3>
+            <a href={project.Deploy} target="_blank" rel="noopener noreferrer">
               View Project
             </a>
-            <a
-              href={project.Repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-yellow-600 font-medium hover:underline"
-            >
+            <br />
+            <a href={project.Repo} target="_blank" rel="noopener noreferrer">
               View Repo
             </a>
           </div>
@@ -72,5 +55,4 @@ export function Portfolio() {
     </section>
   );
 }
-
 export default Portfolio;
