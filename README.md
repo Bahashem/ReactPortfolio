@@ -15,7 +15,7 @@ Clink the link to the deployment. https://bahashemportfolio.netlify.app/
 
 
 Contribution
-Not at this time, however comments and suggestions welcomed.
+Not at this time, however comments and suggestions welcomed. Help with this project was given from the Bootcamp instructor, TAs, tutors and colaboration with classmates as needed.
 
 License
 This project is licensed under the MIT License.
