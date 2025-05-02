@@ -8,10 +8,10 @@ Table of Content
 1.Installation Instructions 2.Usage Information 3.Contribution 4.Tests 5.Questions
 
 Installation Instructions
-No install needed. Clink the link to the deployment.
+No install needed. Clink the link to the deployment. https://bahashemportfolio.netlify.app/
 
 Usage Information
-Clink the link to the deployment.
+Clink the link to the deployment. https://bahashemportfolio.netlify.app/
 
 
 Contribution
